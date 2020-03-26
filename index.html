@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+
+    <title>MEMORY GAME GRANDVALIRA</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/app.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-flex">
+        <div class="row">
+<!--Tauler memory-->
+            <div class="col-lg-6 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-6">GRANDVALIRA</h1>
+                      <h4>MEMORY QUIZZ</h4>
+                      <p class="lead">#quedatacasa &emsp;&emsp; #Grandsherois</p>
+                      <hr class="my-6">
+                      <p class="board">TEMPS: &emsp;&emsp;&emsp;&emsp;&emsp;<u class="marker" id="timer-text">0</u></p>
+                      <p class="board">MOVIMENTS: &emsp;&emsp;<u class="marker" id="move">0</u></p>
+                      <a class="btn btn-primary btn-lg" href="#" id="btn-start">JUGAR</a>
+                    </div>
+                </div>
+            </div>
+<!--Cartes memory-->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <section class="joc-memory"  id="start">
+                        <div class="memory-card" data-framework="ACTIVITATS" id="ACTIVITATS">
+                            <img class="cara" src="images/activitats.jpg" alt="ACTIVITATS" />
+                            <img class="creu" src="images/logo1.png" alt="" />
+                        </div>
+                        <div class="memory-card" data-framework="ACTIVITATS" id="ACTIVITATS1">
+                            <img class="cara" src="images/activitats.jpg" alt="ACTIVITATS" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="CABANYA" id="CABANYA">
+                            <img class="cara" src="images/cabanya.jpg" alt="CABANYA" />
+                            <img class="creu" src="images/logo1.png" alt="" />
+                        </div>
+                        <div class="memory-card" data-framework="CABANYA" id="CABANYA1" >
+                            <img class="cara" src="images/cabanya.jpg" alt="CABANYA" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="SKI" id="SKI" >
+                            <img class="cara" src="images/SKI.png" alt="SKI" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="SKI" id="SKI1" >
+                            <img class="cara" src="images/SKI.png" alt="SKI" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="RESTAURACIO" id="RESTAURACIO">
+                            <img class="cara" src="images/restauracio (2).jpg" alt="RESTAURACIO" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="RESTAURACIO" id="RESTAURACIO1">
+                            <img class="cara" src="images/restauracio (2).jpg" alt="RESTAURACIO" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="RIDER" id="RIDER">
+                            <img class="cara" src="images/rider.jpg" alt="RIDER" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="RIDER" id="RIDER1">
+                            <img class="cara" src="images/rider.jpg" alt="RIDER" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="SOLDEU" id="SOLDEU">
+                            <img class="cara" src="images/soldeu.jpg" alt="SOLDEU" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="SOLDEU" id="SOLDEU1">
+                            <img class="cara" src="images/soldeu.jpg" alt="SOLDEU" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+                        <div class="memory-card" data-framework="ABARSET" id="ABARSET">
+                            <img class="cara" src="images/abarset.png" alt="ABARSET" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="ABARSET" id="ABARSET1">
+                            <img class="cara" src="images/abarset.png" alt="ABARSET" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+                        <div class="memory-card" data-framework="PAS" id="PAS">
+                            <img class="cara" src="images/pas.png" alt="PAS" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="PAS" id="PAS1">
+                            <img class="cara" src="images/pas.png" alt="PAS" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+                        <div class="memory-card" data-framework="ALIGA" id="ALIGA">
+                            <img class="cara" src="images/aliga.png" alt="ALIGA" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="ALIGA" id="ALIGA1">
+                            <img class="cara" src="images/aliga.png" alt="ALIGA" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+                        <div class="memory-card" data-framework="PESSONS" id="PESSONS">
+                            <img class="cara" src="images/pessons.png" alt="PESSONS" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="PESSONS" id="PESSONS1">
+                            <img class="cara" src="images/pessons.png" alt="PESSONS" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+                        <div class="memory-card" data-framework="ACTIVITIES" id="ACTIVITIES">
+                            <img class="cara" src="images/activitats.png" alt="ACTIVITIES" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="ACTIVITIES" id="ACTIVITIES1">
+                            <img class="cara" src="images/activitats.png" alt="ACTIVITIES" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+
+                        <div class="memory-card" data-framework="RATRAC" id="RATRAC">
+                            <img class="cara" src="images/ratrac.png" alt="RATRAC" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="RATRAC" id="RATRAC1">
+                            <img class="cara" src="images/ratrac.png" alt="RATRAC" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+
+
+                        <div class="memory-card" data-framework="PAISATGE" id="PAISATGE">
+                            <img class="cara" src="images/paisatge.jpg" alt="PAISATGE" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+                        <div class="memory-card" data-framework="PAISATGE" id="PAISATGE1">
+                            <img class="cara" src="images/paisatge.jpg" alt="PAISATGE" />
+                            <img class="creu" src="images/logo1.png" alt="logo" />
+                        </div>
+
+                </section>
+            </div>
+        </div>
+
+    <form class="justify-content-center" id="dialog" style="display:none">  
+            <h3 class="congrats"></h3>
+                <h3 class="scoreText" id="moveScore"></h3>
+                <div class="playAgain">
+                   <button class="btn btn-primary btn-lg" id="play-again" ></button>  
+                </div>
+        </form>
+    </div>
+
+    <script src="app/polyfill.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
